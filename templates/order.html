@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>📝 Order a Drink</h1>
+<form method="POST" class="form">
+    <input name="drink" placeholder="Enter drink name">
+    <button type="submit">Order</button>
+</form>
+{% if message %}
+<p class="msg">{{ message }}</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>📋 Pub Menu</h1>
+<ul class="list">
+    {% for drink in drinks %}
+    <li>{{ drink }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

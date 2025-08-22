@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>📌 Sticky Notes Wall</h1>
+<form method="POST" class="form">
+    <input type="text" name="task" placeholder="Write a note...">
+    <button type="submit">Add</button>
+</form>
+<ul class="list">
+    {% for t in tasks %}
+    <li>{{ t }}</li>
+    {% else %}
+    <li>No notes yet. Add one above!</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Pub 🍹</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="/">🏠 Home</a>
+        <a href="/menu">📋 Menu</a>
+        <a href="/order">📝 Order</a>
+        <a href="/todo">📌 To-Do Wall</a>
+        <a href="/blog">📰 Gossip</a>
+        <a href="/about">ℹ️ About</a>
+    </nav>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">© Flask Pub — Where code meets cocktails 🍸</footer>
+</body>
+
+</html>
