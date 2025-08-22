@@ -31,36 +31,27 @@ flask_pub/
   cd flask_pub
 
 2. Create a Virtual Environment
-    python -m venv venv
+   a) python -m venv venv
 
-
-  Activate it:
-  
-  On Windows (PowerShell):
-  
-  venv\Scripts\activate
-  
-  
-  On Mac/Linux:
-  
-  source venv/bin/activate
+    
+   b) Activate it:
+      
+   On Windows (PowerShell):venv\Scripts\activate
+   On Mac/Linux:source venv/bin/activate
 
 3. Install Dependencies
-    pip install -r requirements.txt
+   a) pip install -r requirements.txt
     
     
-    If you don’t have a requirements.txt, just install Flask:
-    
-    pip install flask
+   If you don’t have a requirements.txt, just install Flask:
+   b) pip install flask
 
-4. Run the Flask App
-    python app.py
+4. Run the Flask App: python app.py
 
 5. Open in Browser
 
-After running, the terminal will show something like:
-
- * Running on http://127.0.0.1:5000
+  After running, the terminal will show something like:
+  * Running on http://127.0.0.1:5000
 
 
 Now open your browser and visit:
